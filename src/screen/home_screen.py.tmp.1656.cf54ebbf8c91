@@ -1,0 +1,23 @@
+import streamlit as st
+from src.ui.base_layout import style_base_layout , style_main_layout 
+from src.components.header import header_main
+def home_screen():
+    header_main()
+    style_main_layout()
+    style_base_layout()
+
+    col1, col2 = st.columns(2 , gap ="large")
+    with col1:
+        st.header("I'm Teacher")
+        st.image("https://elements-resized.envatousercontent.com/elements-cover-images/3ee597ae-dedf-43dc-83e6-0b82e1790964?w=1200&h=630&cf_fit=crop&q=85&format=jpeg&s=88c1d395e4abb191ef25776a4f07b2f517b452cd086d2a26bb75735a5e989c16", width=170)
+        if st.button("Teacher Login", type="secondary"):
+            st.session_state['login_type'] = 'Teacher'
+            st.rerun()
+
+    
+    with col2:
+        st.header("I'm Student")
+        st.image("https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-student-glyph-black-icon-png-image_691145.jpg", width=100)
+        if st.button("Student Login", type="secondary"):
+            st.session_state['login_type'] = 'Student'
+            st.rerun()
