@@ -1,0 +1,29 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Streamlit secrets (Supabase URL/keys) — NEVER commit
+.streamlit/secrets.toml
+
+# IDE / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Editor swap / temp files
+*.tmp
+*.tmp.*
+*.swp
+
+# Logs
+*.log
+
+# Optional: keep config.toml (theme) but ignore local-only secrets

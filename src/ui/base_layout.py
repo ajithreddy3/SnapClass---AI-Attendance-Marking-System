@@ -24,6 +24,9 @@ def style_dashboard_layout():
         .stApp {
             background-color: #E0E3FF !important;
         }
+        h2 {
+            color: #5865F2 !important;  
+        }
         </style>
         """,
         unsafe_allow_html=True,
@@ -49,8 +52,8 @@ def style_base_layout():
 
             h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 3.5rem !important;
-                line-height:1.1 1important;
+                font-size: 2rem !important;
+                line-height:0.9 !important;
                 margin-bottom:0rem !important;
             }
                 
@@ -76,6 +79,11 @@ def style_base_layout():
                 transition: transform 0.25s ease-in-out !important;
                 }
 
+            /* Keep every button's label on a single line — the button widens to fit. */
+            button p {
+                white-space: nowrap !important;
+            }
+
             button[kind="secondary"]{
                 border-radius: 1.5rem !important;
                 background-color: #EB459E !important;
@@ -96,6 +104,23 @@ def style_base_layout():
 
             button:hover{
                 transform :scale(1.05)}
+
+            /* Multiselect — white input area, readable on the colored background */
+            .stMultiSelect div[data-baseweb="select"] > div {
+                background-color: #ffffff !important;
+                border-radius: 0.75rem !important;
+            }
+            .stMultiSelect div[data-baseweb="select"] * {
+                color: #1e1e1e !important;
+            }
+            /* The selected "chips" inside the multiselect */
+            .stMultiSelect span[data-baseweb="tag"] {
+                background-color: #5865F2 !important;
+            }
+            .stMultiSelect span[data-baseweb="tag"] * {
+                color: #ffffff !important;
+            }
+
         </style>
         """ ,
         unsafe_allow_html=True,
