@@ -1,0 +1,28 @@
+# Web app
+streamlit
+
+# Database
+supabase
+bcrypt
+
+# Data
+pandas
+numpy
+pillow
+
+# Face recognition
+scikit-learn
+dlib-bin
+git+https://github.com/ageitgey/face_recognition_models
+
+# Voice recognition
+librosa
+resemblyzer
+webrtcvad-wheels
+torch
+
+# QR codes for share-class links
+segno
+
+# Pin setuptools — newer versions break some legacy installs
+setuptools<70.0.0
