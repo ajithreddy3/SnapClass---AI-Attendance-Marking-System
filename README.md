@@ -84,7 +84,7 @@ Implemented in [pipeline/voice_pipeline.py](pipeline/voice_pipeline.py) using `R
 | **Auth (teachers)** | `bcrypt` password hashing |
 | **Auth (students)** | Face ID (face recognition) |
 | **Face recognition** | `dlib` (`dlib-bin`), `face_recognition_models`, `scikit-learn` (SVM) |
-| **Voice recognition** | `Resemblyzer`, `librosa`, `webrtcvad`, `torch` |
+| **Voice recognition** | `Resemblyzer`, `librosa`, `webrtcvad` |
 | **Image / Data** | `Pillow`, `NumPy`, `pandas` |
 | **QR codes** | `segno` |
 | **Runtime** | Python 3.10 |
