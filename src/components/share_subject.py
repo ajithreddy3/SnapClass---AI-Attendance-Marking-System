@@ -5,7 +5,7 @@ import io
 
 @st.dialog("Share Class")
 def share_subject_dialog(subject_name, subject_id):
-    app_domain = "snapclass-main.streamlit.app"  # Change this to your Streamlit app's domain if different
+    app_domain = "aisnapclass-main.streamlit.app"  # Change this to your Streamlit app's domain if different
     join_url = f"{app_domain}/?join_subject={subject_id}"
 
     st.write(f"Share **{subject_name}** with your students using the QR code or the link below.")
